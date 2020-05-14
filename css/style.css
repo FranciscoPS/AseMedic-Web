@@ -228,6 +228,17 @@ img{
     color: white;
 }
 
+@media(max-width:800px){
+    .botones-beneficios{
+        display: flex;
+        flex-direction: column;
+    }
+    .botones-beneficios a{  
+        font-size: 17.5px;
+        font-weight: 400;
+    }
+}
+
 
 /**Menu Desplegable**/
 #menu #item a{
@@ -377,6 +388,12 @@ img{
     font-family: 'Lato', sans-serif;
     font-size: 50px;
     margin-bottom: 4rem;
+}
+
+@media(max-width:1400px){
+    .contenido-beneficios h1{   
+        margin-bottom: 0;
+    }
 }
 
 .contenido-beneficios span{       
