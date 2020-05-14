@@ -167,9 +167,10 @@ img{
 }
 
 .botones-beneficios a:hover{
-    cursor: pointer;
+    cursor: default;
+    /*INHABILITADO TEMPORALMENTE
     opacity: 90%;
-    transition: all 0.2s ease;
+    transition: all 0.2s ease;*/
 }
 
 .btn-beneficios1{
@@ -386,11 +387,18 @@ img{
 }
 
 @media(max-width:1400px){
-    .seccion-beneficios{
-        height: 950px;
-    }
+    
     .contenido-beneficios{
         margin-left: 5px;
+    }
+    .seccion-beneficios{
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .contenido-beneficios{       
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -479,7 +487,7 @@ img{
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        height: 800px;
+        height: 815px;
         font: 'Lato', sans-serif;
     }
     
@@ -700,6 +708,7 @@ img{
 @media(max-width:1400px){
     .seccion-inferior{
         flex-direction: column;
+        padding: 0 15%;
     }
 
     .entrada-blog .imagen{
