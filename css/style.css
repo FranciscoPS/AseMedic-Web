@@ -524,12 +524,15 @@ img{
         background-size: cover;
         height: 815px;
         font: 'Lato', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
     
     .contenido-barra-esp{    
         padding-left: 5%;
         padding-right: 5%;
-        padding-top: 110%;
+        padding-top: 400px;
         padding-bottom: 20px;
         color: #205F83;
     }
