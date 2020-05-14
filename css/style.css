@@ -708,7 +708,7 @@ img{
 @media(max-width:1400px){
     .seccion-inferior{
         flex-direction: column;
-        padding: 0 15%;
+        padding: 0 10%;
     }
 
     .entrada-blog .imagen{
