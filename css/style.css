@@ -153,6 +153,10 @@ img{
     transition: all 0.2s ease;
 }
 
+.botones-beneficios{
+    column-count: 2;
+}
+
 .botones-beneficios a{  
     background-repeat: no-repeat;
     background-position: center center;
@@ -218,6 +222,12 @@ img{
    line-height: 1.2;
    text-align: end;
    padding-right: 45px;
+}
+
+@media (max-width:800px){
+    .btn-seguimiento{
+        font-size: 22px;
+     }
 }
 
 .btn-seguimiento:hover{
@@ -390,10 +400,11 @@ img{
     margin-bottom: 4rem;
 }
 
-@media(max-width:1400px){
+@media(max-width:800px){
     .contenido-beneficios h1{   
         margin-bottom: 0;
     }
+
 }
 
 .contenido-beneficios span{       
@@ -403,10 +414,13 @@ img{
     font-weight: 300;
 }
 
-@media(max-width:1400px){
+@media(max-width:800px){
     
     .contenido-beneficios{
-        margin-left: 5px;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-right: 0;
     }
     .seccion-beneficios{
         height: 100%;
@@ -416,6 +430,10 @@ img{
     .contenido-beneficios{       
         display: flex;
         flex-direction: column;
+    }
+
+    .botones-beneficios{
+        column-count: 2;
     }
 }
 
@@ -447,7 +465,7 @@ img{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 504.243px;
+    min-height: 580px;
     font: 'Lato', sans-serif;
 }
 
@@ -476,7 +494,7 @@ img{
 }
 
 
-@media(max-width: 1400px){
+@media(max-width: 800px){
     .seccion-especialidades{
         margin-bottom: 86.178px;
     }
@@ -509,28 +527,26 @@ img{
     }
     
     .contenido-barra-esp{    
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 385px;
-        padding-bottom: 0px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 110%;
+        padding-bottom: 20px;
         color: #205F83;
     }
     
     .contenido-barra-esp h1{    
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 400;
     }
     
     .contenido-barra-esp h2{    
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 400;
     }
     
     .contenido-barra-esp p{ 
         color: #4E4C4E;
-        font-size: 24px;
-        font-weight: 300;
-        padding-right: 0px;
+        font-size: 18px;
     }
 }
 
@@ -563,6 +579,23 @@ img{
     font-size: 74.07px;
     color: #d7030f;
     font-weight: 900;
+}
+
+@media(max-width:800px){
+    .slogan-aprovecha h1{
+        font: 'Lato', sans-serif;
+        font-size: 35px;
+        color: #205F83;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    
+    .slogan-aprovecha span{
+        font-size: 50px;
+        color: #d7030f;
+        font-weight: 900;
+    }
+    
 }
 
 .beneficios-aprovecha{
@@ -843,6 +876,7 @@ img{
 
 .logo-footer{
     height: 100px;
+    width: 250px;
     display: flex;
     align-items: center center;
 }
@@ -931,6 +965,10 @@ div.vertical-line{
     .redes-sociales img{
         height: 40px;
         min-width: 50px;
+    }
+
+    .logo-face{
+        width: 40px;
     }
     
     .contacto-footer{
