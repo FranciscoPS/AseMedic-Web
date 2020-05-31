@@ -15,8 +15,8 @@ img{
 }
 
 .seccion{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .fw-300{
@@ -892,11 +892,13 @@ img{
 /**Footer**/
 .site-footer{
     background-color: #205f83;
-    height: 150px;
+    padding: 30px 0;
+}
+
+.contenido-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8%;
 }
 
 
@@ -963,45 +965,41 @@ div.vertical-line{
 
 @media(max-width:1100px){
     .site-footer{
-        background-color: #205f83;
-        height: 450px;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        padding: 65px 65px;
+        justify-content: space-between;
+        height: 350px;
+    }
+
+    .contenido-footer{
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
     }
     
     .logo-footer{
         display: flex;
-        align-items: center center;
+        align-items: center;
     }
     
     .redes-sociales{
-        display: flex;
-        align-items: center;
-        text-align: center;
         padding-left: 10%;
-        padding-bottom: 30px;
+        padding-bottom: 0;
     }
     
-    .redes-sociales img{
-        height: 40px;
-        min-width: 50px;
-    }
 
     .logo-face{
-        width: 40px;
+        width: 45px;
     }
     
     .contacto-footer{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-    }
-    
+        margin-top: 20%;
+    }  
+
     .contactos-footer{
-        display: flex;
-        text-align: center;
+        margin-top: 5%;
     }
     
     div.vertical-line{
@@ -1014,20 +1012,42 @@ div.vertical-line{
 
 .secondary-header{
     background-color: #205f83;
-    height: 300px;
-    padding: 8% 8%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
+    padding: 10px 0 30px 0;
 }
 
 @media (min-width: 768px) {
     .secondary-header{
-        flex-direction: row;
-        align-items: center;
         height: 150px;
-        padding: 0 8%;
+        padding: 0;
+    }
+}
+
+.contenido-secondary-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-secondary-header{
+        flex-direction: row;
+    }
+}
+
+/**Barra**/
+
+.barra{
+    padding-top: 30px;
+} 
+
+@media (min-width: 768px) {
+    .barra{
+        display:flex;
+        justify-content: space-between; 
+        align-items: center;
     }
 }
 
