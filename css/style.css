@@ -14,6 +14,19 @@ img{
     margin-right: auto;
 }
 
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
 /** Utilidades **/
 
 .ft-sen36{
@@ -563,6 +576,12 @@ img{
     display: flex;
 }
 
+.seccion-aprovecha div{
+    max-width: 800px; 
+    margin-left:auto; 
+    margin-right: auto;
+}
+
 .slogan-aprovecha{
     flex-basis: 50%;
     padding-left: 65.468px;
@@ -693,6 +712,9 @@ img{
     padding-left: 65.468px;
     padding-right: 69.43px;
     margin-bottom: 100px;
+    max-width: 1500px; 
+    margin-left:auto; 
+    margin-right: auto;
 }
 
 .seccion-inferior .blog{
@@ -781,7 +803,7 @@ img{
         display: flex;
         flex-direction: column;
     }
-
+    
 }
 
 
@@ -870,18 +892,16 @@ img{
 /**Footer**/
 .site-footer{
     background-color: #205f83;
-    height: 200px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 65px;
+    padding: 0 8%;
 }
 
+
 .logo-footer{
-    height: 100px;
-    width: 250px;
-    display: flex;
-    align-items: center center;
+    width: 300px;
 }
 
 .redes-sociales{
@@ -944,7 +964,7 @@ div.vertical-line{
 @media(max-width:1100px){
     .site-footer{
         background-color: #205f83;
-        height: 500px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -990,3 +1010,79 @@ div.vertical-line{
     
 }
 
+/** NOSOTROS.HTML(SE HACE MOBILE FIRST)**/
+
+.secondary-header{
+    background-color: #205f83;
+    height: 300px;
+    padding: 8% 8%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .secondary-header{
+        flex-direction: row;
+        align-items: center;
+        height: 150px;
+        padding: 0 8%;
+    }
+}
+
+/**Navegación(SE HACE RESPONSIVO MOBILE FIRST)**/
+.navegacion a{
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    font-size: 20px; 
+    display: block;
+}
+@media (min-width: 768px) {
+
+    .navegacion a{
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .navegacion a:last-of-type{
+        margin-right: 0;
+    }
+}
+
+.navegacion a:hover{
+    color: darkred;
+}
+
+/*************/
+
+.texto-nosotros{
+    padding: 5%;
+}
+
+@media (min-width: 768px) {
+    .contenido-nosotros{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 20px;
+    }
+}
+
+.texto-nosotros blockquote{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0 30px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.texto-nosotros p{
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .texto-nosotros{
+        padding: 0;
+    }
+}
