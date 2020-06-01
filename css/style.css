@@ -678,7 +678,7 @@ img{
         background-color: #dbf1f8;
         height: 800px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;  
     }
     
     .slogan-aprovecha{       
@@ -712,7 +712,7 @@ img{
     padding-left: 65.468px;
     padding-right: 69.43px;
     margin-bottom: 100px;
-    max-width: 1500px; 
+    max-width: 1400px; 
     margin-left:auto; 
     margin-right: auto;
 }
@@ -1105,4 +1105,66 @@ div.vertical-line{
     .texto-nosotros{
         padding: 0;
     }
+}
+
+/**Especialidades**/
+@media (min-width: 768px) {
+    .contenedor-anuncios{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.anuncio{
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .anuncio{
+        flex: 0 0 calc(33.3% - 10px);
+    }
+}
+
+.contenido-anuncio{
+    padding: 20px;
+    line-height: 2;
+}
+
+.contenido-anuncio h3{
+    font-weight: 600;
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p{
+    margin: 0;
+}
+
+.precio{
+    color: #71B100;
+    font-weight: 700;
+}
+
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;    
+    justify-content: space-evenly; 
+    max-width: 500px;
+    flex: 1; 
+}
+
+.iconos-caracteristicas li{ 
+    display: flex; 
+}
+
+.iconos-caracteristicas img{
+    max-width: 45px;
+}
+
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
 }
